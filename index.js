@@ -38,9 +38,6 @@ const createAccountButtonEl = document.getElementById("create-account-btn")
 
 const signOutButtonEl = document.getElementById("sign-out-btn")
 
-const userProfilePictureEl = document.getElementById("user-profile-picture")
-
-const userGreetingEl = document.getElementById("user-greeting")
 
 /* == UI - Event Listeners == */
 
@@ -53,13 +50,15 @@ signOutButtonEl.addEventListener("click", authSignOut)
 
 /* === Main Code === */
 
+
 showLoggedOutView()
 onAuthStateChanged(auth, (user) => {
     if (user) {
       showLoggedInView()
       const uid = user.uid;
-      showProfilePicture(userProfilePictureEl, user);
-      showUserGreeting(userGreetingEl, user)
+    //   showUserGreeting(userGreetingEl, user)
+    //   const nelly = document.getElementById("nelly")
+    //   nelly.src = "assets/images/nelly.jpg"
     } 
     else {
       showLoggedOutView()
@@ -77,7 +76,7 @@ function showProfilePicture(imgElement, user) {
     else {
         imgElement.src = "assets/images/defaultPic.jpg";
     }
-
+    
 }
  
 
@@ -148,14 +147,14 @@ function hideView(view) {
 
 //credit: coursera
 
-function showUserGreeting(element, user) {
-    const displayName = user.displayName;
-    console.log(displayName)
-    if (user.displayName) {
-        const firstName = user.displayName.split(' ')[0];
-        element.textContent = `Hi ${firstName}, how are you?`;
-    } 
-    else {
-        element.textContent = "Hey friend, how are you?";
-    }
-}
+// function showUserGreeting(element, user) {
+//     const displayName = user.displayName;
+//     console.log(displayName)
+//     if (user.displayName) {
+//         const firstName = user.displayName.split(' ')[0];
+//         element.textContent = `Hi ${firstName}, how are you?`;
+//     } 
+//     else {
+//         element.textContent = "Hey friend, how are you?";
+//     }
+// }

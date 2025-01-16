@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Hot-and-Cold</title>
+        <title>Brooklyn Tech Student App</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <body>
         <section id="logged-out-view">
             <div class="container">
-                <h1 class="app-title">Hot-and-Cold</h1>
+                <h1 class="app-title">Brooklyn Tech Student App</h1>
                 
                 <div class="provider-buttons">
                     <button id="sign-in-with-google-btn" class="provider-btn">
@@ -33,6 +33,8 @@
         </section>
         
         <section id="logged-in-view">
+            <h1 class="app-title">Brooklyn Tech Student App</h1>
+            <div></div>
             <div class="container">
                 <!-- log out button-->
                 <nav>
@@ -40,12 +42,63 @@
                         <img src="assets/icons/logOut.jpg" class="icon-img-btn">
                     </button>
                 </nav>
-
                 <div class="app-container">
-                    <div class="user-section">
-                        <img id="user-profile-picture">
-                        <h2 id="user-greeting"></h2>
+                    <div class="row">
+
+                        <button class="sub-app">
+                            <img src="assets/images/calendar-icon.png">
+                        Calendar</button>
+                            
+                        <button class="sub-app">
+                            <img src="assets/images/sports-icon.png">
+                        Sports</button>
+     
+                        <button class="sub-app">
+                            <img src="assets/images/trophy-icon.png">
+                        Results</button>
+                        
                     </div>
+
+                    <div class="row">
+
+                        <button class="sub-app">
+                            <img src="assets/images/apple.png">
+                        Teachers</button>
+                            
+                        <button class="sub-app">
+                            <img src="assets/images/news-icon.png">
+                        News</button>
+     
+                        <button class="sub-app">
+                            <img src="assets/images/weather-icon.png">
+                        Weather</button>
+                        
+                    </div>
+
+                    <div class="row">
+
+                        <button class="sub-app">
+                            <img src="assets/images/map-icon.png">
+                        Map</button>
+                            
+                        <button class="sub-app">
+                            <img src="assets/images/contacts-icon.png">
+                        Contacts</button>
+     
+                        <button class="sub-app">
+                            <img src="assets/images/internet-icon.png">
+                        Websites</button>
+                        
+                    </div>
+                    <!-- <div class="user-section">
+                        <img id="nelly" src="assets/images/nelly.jpg">
+                    </div>
+
+                    <button id="calendar"  class="user-section">
+                        <img src="assets/images/calendar-icon.png">
+
+                    </button> -->
+                    
                 </div>
             </div>
         </section>

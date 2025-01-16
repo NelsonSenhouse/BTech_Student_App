@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FFDE00;
+    --primary-color: blue;
     --primary-light-color: #FFE769;
     --secondary-color: #FFE4BA;
     --secondary-light-color: #FFF6E8;
@@ -31,9 +31,9 @@ html, body {
 }
 
 body {
-    color: var(--dark-color);
-    background-color: var(--secondary-light-color);
-    font-family: var(--primary-font);
+    color: white;
+    background-color: darkblue;
+    font-family: var(--primary-font); 
 }
 
 /* === Typography === */
@@ -50,6 +50,7 @@ h2 {
     font-family: var(--seconday-font);
     font-size: 2.5em;
     text-align: center;
+    padding-left: 50px;
 }
 
 /* === Sections === */
@@ -66,7 +67,7 @@ section {
 
 * /*=== User Section === */
 
-.user-section {
+/* .user-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +83,7 @@ section {
 
 .user-section h2 {
     font-size: 1.2em;
-}
+} */
 
 
 /* === Nav === */
@@ -94,21 +95,21 @@ nav {
     justify-content: flex-end;
 }
 
-.user-section {
+.row{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.8em;
 }
 
-.user-section img {
+.row img {
     width: 3.75em;
     height: 3.75em;
     border-radius: 100%;
     border: var(--border-width) solid var(--dark-color);
 }
 
-.user-section h2 {
+.row h2 {
     font-size: 1.2em;
 }
 /* === Structure === */
@@ -147,6 +148,7 @@ input:focus, button:focus {
     flex-direction: column;
     gap: 3em;
 }
+
 
 /* === Input fields === */
 
