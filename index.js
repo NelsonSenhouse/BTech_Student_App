@@ -145,6 +145,19 @@ function hideView(view) {
     view.style.display = "none"
 } 
 
+// Select all buttons inside the logged-in view
+const subAppButtons = document.querySelectorAll(".sub-app");
+
+// Function to redirect to Brooklyn Tech website
+function redirectToBrooklynTech() {
+    window.location.href = "https://www.bths.edu/";
+}
+
+// Add event listener to each button
+subAppButtons.forEach(button => {
+    button.addEventListener("click", redirectToBrooklynTech);
+});
+
 //credit: coursera
 
 // function showUserGreeting(element, user) {
